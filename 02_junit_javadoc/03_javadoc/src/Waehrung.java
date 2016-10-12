@@ -1,16 +1,35 @@
 // TODO: JavaDoc
+/**
+ * 
+ * 
+ * @author CangoHD126
+ * 
+ *
+ */
 public class Waehrung {
 
     // TODO: JavaDoc
+	/**
+	 * Instanzvariable fuer gegenwaertigen Kurs
+	 */
     private final int kurs;
 
     // TODO: JavaDoc
+    /**
+     * Instanzvariable fuer Namen der Waehrung
+     */
     private final String name;
 
     // TODO: JavaDoc
+    /**
+     * Instazvariable fuer Kuerzel der Waehrung
+     */
     private final String kuerzel;
 
     // TODO: JavaDoc
+    /**
+     * Instanzvariabel fuer die Umrechnung der Waehrungen
+     */
     private static final long TEILER = 10000;
 
     /**
@@ -27,21 +46,39 @@ public class Waehrung {
     }
 
     // TODO: JavaDoc
+    /**
+     * @param betrag Betrag der gewechselt wird
+     * @param Waehrung Art der Waehrung die gewechselt wird
+     * @param toWaehrung in welche andere Waehrung gewechselt wird
+     * @return vollstaedige umgerechnete Waehrung die ausgegeben wird
+     */
     public long umrechnen(long betrag, Waehrung toWaehrung) {
         return betrag * kurs / toWaehrung.kurs;
     }
 
     // TODO: JavaDoc
+    /**
+     * getter fuer den Kurs der Waehrung
+     * @return gegenwaertiger Kurs
+     */
     public int getKurs() {
         return kurs;
     }
     
     // TODO: JavaDoc
+    /**
+     * getter fuer den Namen der Waehrung
+     * @return gegenwaertiger Name der Waehrung
+     */
     public String getName() {
         return name;
     }
 
     // TODO: JavaDoc
+    /**
+     * getter fuer die Kuerzel der Waehrung
+     * @return gegenwaertiges Kuerzel der Waehrung
+     */
     public String getKuerzel() {
         return kuerzel;
     }
