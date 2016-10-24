@@ -3,6 +3,7 @@ package tpe.oo.polymorphie;
 import tpe.oo.polymorphie.tiere.Affe;
 import tpe.oo.polymorphie.tiere.Giraffe;
 import tpe.oo.polymorphie.tiere.Gorilla;
+import tpe.oo.polymorphie.tiere.ZooTier;
 
 /**
  * Simulationsklasse.
@@ -24,22 +25,23 @@ public final class ZooSimulation {
     public static void main(String[] args) {
         Futterstelle futterstelle = new Futterstelle();
         
-        Affe charlie = new Affe("Charlie");
-        Gorilla buck = new Gorilla("Buck");
-        Giraffe debbie = new Giraffe("Debbie");
+        ZooTier[] tiere = new ZooTier[3];
+        tiere[0] = new Affe("Charlie"); 
+        tiere[1] = new Gorilla("Buck");
+        tiere[2] = new Giraffe("Debbie");
         
-        System.out.println(charlie);
-        System.out.println(buck);
-        System.out.println(debbie);
-        
+        for (int i = 0; i < 3; i++) { 
+        System.out.println(tiere[i]);
+        }
         System.out.println("Fütterung...");
         
-        futterstelle.gibFutter(charlie);
-        futterstelle.gibFutter(buck);
-        futterstelle.gibFutter(debbie);
+        for(int i=0;i<3;i++){
+            futterstelle.gibFutter(tiere[i]);
+        }
+        for(int i=0;i<3;i++){
+            System.out.println(tiere[i]);
+        }
         
-        System.out.println(charlie);
-        System.out.println(buck);
-        System.out.println(debbie);
+        
     }
 }

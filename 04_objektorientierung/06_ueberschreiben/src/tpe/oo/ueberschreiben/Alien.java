@@ -14,7 +14,7 @@ import de.smits_net.games.framework.sprite.Direction;
 public class Alien extends AnimatedSprite {
 
     /** Geschwindigkeit des Alien X-Richtung. */
-    private static final int ALIEN_SPEED = 2;
+    private static final int ALIEN_SPEED = 5;
 
     /**
      * Neues Alien anlegen.
@@ -32,6 +32,11 @@ public class Alien extends AnimatedSprite {
     /**
      * Alien explodieren lassen.
      */
+     @Override
+    protected void mousePressed() {
+        super.mousePressed();
+        explode();
+    }
     public void explode() {
         setActive(false);
         setImages(new AnimatedImage(20,
