@@ -3,9 +3,16 @@
 	<name>repo-062</name>
 	<comment></comment>
 	<projects>
+		<project>lib</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>net.sf.eclipsecs.core.CheckstyleBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>net.sf.eclipsecs.core.CheckstyleNature</nature>
 	</natures>
 </projectDescription>
