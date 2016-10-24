@@ -17,12 +17,9 @@ public class Nachtelf extends Wesen  {
     	this.naturwiderstand = naturwid;
     }
     public Nachtelf(String name){
-    	super(name);
-    	this.naturwiderstand = STANDARD_NATURWIDERSTAND;
+    	this(name,STANDARD_NATURWIDERSTAND);
     }
-    public Nachtelf(){
-    	
-    }
+    
     
     /**
      * Stärke des Naturwiderstandes.

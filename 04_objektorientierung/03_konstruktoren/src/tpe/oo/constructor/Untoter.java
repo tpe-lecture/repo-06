@@ -17,12 +17,9 @@ public class Untoter extends Wesen{
     	this.unterwasseratmung = unterwasserat;
     }
     public Untoter(String name){
-    	super(name);
-    	this.unterwasseratmung = STANDARD_UNTERWASSERATMUNG);
+    	this(name, STANDARD_UNTERWASSERATMUNG);
     }
-    public Untoter(){
-    	this.unterwasseratmung = STANDARD_UNTERWASSERATMUNG;
-    }
+    
     /**
      * Fähigkeit zur Unterwasseratmnung.
      * 
