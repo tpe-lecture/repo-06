@@ -3,7 +3,7 @@ package tpe.oo.constructor;
 /**
  * Nachtelf aus der Allianz.
  */
-public class Nachtelf /* extends Figur */ {
+public class Nachtelf extends Wesen  {
 
     /** Standardmäßige Stärke der Fähigkeit Naturwiderstand. */
     public static final int STANDARD_NATURWIDERSTAND = 5;
@@ -12,6 +12,17 @@ public class Nachtelf /* extends Figur */ {
     private int naturwiderstand;
     
     // Konstruktoren fehlen. Bitte hier einfügen.
+    public Nachtelf(int naturwid, String name){
+    	super(name);
+    	this.naturwiderstand = naturwid;
+    }
+    public Nachtelf(String name){
+    	super(name);
+    	this.naturwiderstand = STANDARD_NATURWIDERSTAND;
+    }
+    public Nachtelf(){
+    	
+    }
     
     /**
      * Stärke des Naturwiderstandes.
