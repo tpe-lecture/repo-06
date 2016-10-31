@@ -58,6 +58,6 @@ public class TestDigitalController {
      * @param point Punkt, der verglichen werden soll
      */
     protected void assertPointEquals(int x, int y, Point point) {
-        assertEquals(new Point(x, y), point);
+        assertEquals(new Point(x,y), point);
     }
 }
