@@ -3,7 +3,7 @@ package tpe.oo.abstrakt;
 /**
  * Ein Kreis.
  */
-public class Kreis {
+public class Kreis extends Figur {
 
     /** Radius des Kreises. */
     private double radius;
@@ -22,6 +22,7 @@ public class Kreis {
      * 
      * @return die Fläche.
      */
+    @Override
     public double flaeche() {
         return Math.PI * radius * radius;
     }
