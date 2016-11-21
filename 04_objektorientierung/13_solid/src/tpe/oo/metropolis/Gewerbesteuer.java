@@ -1,5 +1,5 @@
 package tpe.oo.metropolis;
 
-public interface Gewerbesteuer {
+public interface Gewerbesteuer extends Steuerpfl{
 
 }
