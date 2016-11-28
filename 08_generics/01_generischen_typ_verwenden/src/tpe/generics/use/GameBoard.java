@@ -21,7 +21,7 @@ public class GameBoard extends Board {
 
     /** Münzstapel. */
     // TODO: Münzen als Stack speichern
-    Stack newMuenzStack = new Stack();
+    Stack<Sprite> newMuenzStack = new Stack();
     
 
     /** A moving coin. */
@@ -152,5 +152,6 @@ public class GameBoard extends Board {
         while(newMuenzStack.empty()){
             return true;
         }
+        return false;
     }
 }
