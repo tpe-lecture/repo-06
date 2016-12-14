@@ -29,7 +29,7 @@ public class CrypterTest {
         Crypter c = new CrypterImpl();
 
         assertEquals("4bcd3fghijk1mn0pqrs7uvwxyzl2ea56t89o",
-                c.encrypt("ABCDEFGHIJKLMNOPQRSTU!()/VWXYZ1234567890"));
+                c.encrypt("ABCDEFGHIJKLMNOPQRSTU!()/+-(//&$&%$(VWXYZ1234567890"));
 
         assertEquals("4bcd3fghijk1mn0pqrs7uvwxyzl2ea56t89o",
                 c.encrypt("!A!B(CDEFG)hIJKLMNOPQRSTUVWXYZ1234567890"));
